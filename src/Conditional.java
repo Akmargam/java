@@ -1,19 +1,16 @@
 public class Conditional {
-    public static void main(String ... args){
-        char fruit ='a';
-        switch(fruit){
-            case 'm':
-                System.out.println("MANGO");
+    public static void main(String ... args) {
+
+        int a=1;
+        for(a=1;a<=10;a++){
+            if(a==3){
+                continue;
+            }
+            if(a==9){
                 break;
-            case 'a':
-                System.out.println("APPLE");
-                break;
-            case 'p':
-                System.out.println("PINEAPPLE");
-                break;
-            case 's':
-                System.out.println("STRAWBERRY");
-                break;
+            }
+            System.out.print("\t"+a);
         }
+
     }
 }
