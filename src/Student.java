@@ -6,7 +6,7 @@ public class Student {
         BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
         System.out.println("Please choose a number from 1 to 4: ");
         int Input=Integer.parseInt(br.readLine());
-        String mobileName=switch (Input){
+        /*String mobileName=switch (Input){
             case 1->"Apple";
             case 2->"Samsung";
             case 3->{
@@ -17,6 +17,19 @@ public class Student {
             case 4->"Google Pixel";
             default -> "Please choose option from 1-4";
         };
-        System.out.println("Option you chose is: "+Input +"\t"+"Mobile is: "+mobileName);
+        System.out.println("Option you chose is: "+Input +"\t"+"Mobile is: "+mobileName);*/
+        if(Input==1){
+            System.out.println("Option you chose is: "+Input +"\t"+"Mobile is: Apple");
+        }
+        else if (Input==2){
+            System.out.println("Option you chose is: "+Input +"\t"+"Mobile is: Samsung");
+        }
+        else if (Input==3){
+            System.out.println("Option you chose is: "+Input +"\t"+"Mobile is: Xiomi");
+        }
+        else if (Input==4){
+            System.out.println("Option you chose is: "+Input +"\t"+"Mobile is: Google Pixel");
+        }
+        else System.out.println("Please choose option from 1-4");
     }
 }
