@@ -27,17 +27,14 @@ public class Arrays {
             oddEven[i]=Integer.parseInt(br.readLine());
         }
         System.out.println("Array is: "+java.util.Arrays.toString(oddEven));
-        int[] even=new int[10];
-        int[] odd=new int[10];
+
         for (int i=0;i<arrayLength;i++){
             if(oddEven[i]%2==0){
-                even[i]=oddEven[i];
+                System.out.println("Even:"+oddEven[i]);
             }
             else{
-                odd[i]=oddEven[i];
+                System.out.println("Odd"+oddEven[i]);
             }
-            System.out.println("Even:"+java.util.Arrays.toString(even));
-            System.out.println("Odd:"+java.util.Arrays.toString(odd));
         }
 
     }
