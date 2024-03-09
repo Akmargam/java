@@ -37,7 +37,7 @@ public class Arrays {
                 odd[i]=oddEven[i];
             }
             System.out.println("Even:"+java.util.Arrays.toString(even));
-            System.out.println("Even:"+java.util.Arrays.toString(odd));
+            System.out.println("Odd:"+java.util.Arrays.toString(odd));
         }
 
     }
