@@ -18,24 +18,26 @@ public class Arrays {
             sum=sum+subjectMarks[i];
         }
         System.out.println("Total number of marks are:"+sum);*/
-        BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         System.out.println("Enter length of the array: ");
-        int arrayLength=Integer.parseInt(br.readLine());
-        int[] oddEven=new int[arrayLength];
-        for(int i=0;i<arrayLength;i++){
+        int arrayLength = Integer.parseInt(br.readLine());
+        int[] oddEven = new int[arrayLength];
+        for (int i = 0; i < arrayLength; i++) {
             System.out.println("PLease enter numbers: ");
-            oddEven[i]=Integer.parseInt(br.readLine());
+            oddEven[i] = Integer.parseInt(br.readLine());
         }
-        System.out.println("Array is: "+java.util.Arrays.toString(oddEven));
+        System.out.println("Array is: " + java.util.Arrays.toString(oddEven));
+        System.out.println("Even Numbers:");
+        for (int i = 0; i < arrayLength; i++) {
+            if (oddEven[i] % 2 == 0) {
+                System.out.println(oddEven[i]);
+            }}
+        System.out.println("Odd Numbers:");
+        for (int j = 0; j < arrayLength; j++) {
+                if (oddEven[j] % 2 != 0) {
+                    System.out.println(oddEven[j]);
+                }
+            }
 
-        for (int i=0;i<arrayLength;i++){
-            if(oddEven[i]%2==0){
-                System.out.println("Even:"+oddEven[i]);
-            }
-            else{
-                System.out.println("Odd"+oddEven[i]);
-            }
         }
-
     }
-}
