@@ -2,9 +2,9 @@ public class ClassThree {
 
     int var1,var2,result;
 
-    ClassThree(int var1, int var2){
-        this.var1=var1;
-        this.var2=var2;
+    ClassThree(int x, int y){
+        var1=x;
+        var2=y;
     }
     void Multi(){
         result=var1*var2;
