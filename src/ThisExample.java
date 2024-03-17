@@ -1,8 +1,12 @@
 public class ThisExample {
-    int a;
+    private int a;
 
-    ThisExample(int a) {
-        this.a = a;
+    ThisExample() {
+        this(1000);
+        this.get();
+    }
+    ThisExample(int a){
+        this.a=a;
     }
 
     private void get() {
@@ -10,7 +14,6 @@ public class ThisExample {
     }
 
     public static void main(String[] args) {
-        ThisExample obj = new ThisExample(10000);
-        obj.get();// Creates an instance of ThisExample
+        ThisExample obj = new ThisExample();
     }
 }
