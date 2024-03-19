@@ -16,13 +16,12 @@ public class SearchArray {
         System.out.println(Arrays.toString(cityArray));
         System.out.println("Enter a City to search:");
         String searchCity= br.readLine();
+        boolean found=false;
         for (int k=0;k<i;k++){
             if(searchCity.equalsIgnoreCase(cityArray[k])) System.out.println("Position is:"+k);
-            else{
-                System.out.println("Please enter a correct city from those entered options!");
-                break;
-            }
-
+            found=true;
+            break;
         }
+        if(found) System.out.println("Please enter a correct city:");
     }
 }
