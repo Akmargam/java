@@ -18,6 +18,11 @@ public class SearchArray {
         String searchCity= br.readLine();
         for (int k=0;k<i;k++){
             if(searchCity.equalsIgnoreCase(cityArray[k])) System.out.println("Position is:"+k);
+            else{
+                System.out.println("Please enter a correct city from those entered options!");
+                break;
+            }
+
         }
     }
 }
