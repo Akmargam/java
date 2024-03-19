@@ -14,7 +14,7 @@ public class SearchArray {
             cityArray[j]= br.readLine();
         }
         System.out.println(Arrays.toString(cityArray));
-        System.out.println("Enter a City to search");
+        System.out.println("Enter a City to search:");
         String searchCity= br.readLine();
         for (int k=0;k<i;k++){
             if(searchCity.equalsIgnoreCase(cityArray[k])) System.out.println("Position is:"+k);
