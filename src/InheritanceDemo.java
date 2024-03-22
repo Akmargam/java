@@ -1,17 +1,19 @@
 class One{
     int a;
-    One(){
-        System.out.println("Hello");
+    One(int a){
+        this.a=a;
     }
 
 }
 class Two extends One{
-    int i;
-    Two(){
-        System.out.println("Two");
+    int b;
+    Two(int a,int b){
+        super(a);
+        this.b=b;
     }
     void display() {
-
+        System.out.println("Sub: "+b);
+        System.out.println("Super "+super.a);
     }
 
 }
@@ -20,7 +22,8 @@ class Two extends One{
 
 public class InheritanceDemo {
     public static void main(String[]args){
-        Two obj=new Two();
+        Two obj=new Two(22,33);
+        obj.display();
 
     }
 }
