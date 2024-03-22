@@ -1,16 +1,20 @@
 class One{
-    int i=10;
-    void display(){
-        System.out.println(i);
+    int a;
+    public One(){
+        a=10;
     }
+
 }
 class Two extends One{
-    int i=20;
-    void display(){
-        System.out.println(i);
-        super.display();
-        System.out.println("Super: "+super.i);
+    int i;
+    public Two(){
+        i=20;
     }
+    void display() {
+        System.out.println(i);
+        System.out.println(a);
+    }
+
 }
 
 
