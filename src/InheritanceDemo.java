@@ -1,5 +1,6 @@
 class One{
     int a;
+    protected String name="Arun";
     One(int a){
         this.a=a;
     }
@@ -14,6 +15,7 @@ class Two extends One{
     void display() {
         System.out.println("Sub: "+b);
         System.out.println("Super "+super.a);
+        System.out.println("Protected var: "+name);
     }
 
 }
