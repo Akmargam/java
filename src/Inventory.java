@@ -13,11 +13,9 @@ public class Inventory {
         System.out.println("How many products you have in the stock: ");
         int length=Integer.parseInt(br.readLine());
         Product pr=new Product();
-        pr.Add(length);
         array=pr.Add(length);
         Stocks st=new Stocks();
         numbers=st.Run(length);
-        st.Run(length);
         System.out.println("Below is the match:");
         System.out.println(Arrays.toString(array));
         System.out.println(Arrays.toString(numbers));
