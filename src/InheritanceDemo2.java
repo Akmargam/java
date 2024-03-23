@@ -5,7 +5,7 @@
             System.out.println("Default constructor of super class");
         }
         Sup(int i){
-            System.out.println("Parameterized constructor of super class");
+            System.out.println("Parameterized constructor of super class "+i);
         }
     }
     class Sub extends Sup{
@@ -15,7 +15,7 @@
         }
         Sub(int i){
             super(i);
-            System.out.println("Param constructor of sub class");
+            System.out.println("Param constructor of sub class "+i);
         }
     }
     class grand extends Sub{
@@ -25,7 +25,7 @@
         }
         grand(int i){
             super(i);
-            System.out.println("Param constructor of grand class");
+            System.out.println("Param constructor of grand class "+i);
         }
     }
 public class InheritanceDemo2 {
