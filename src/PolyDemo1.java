@@ -1,20 +1,8 @@
 public class PolyDemo1 {
-    class Animal {
-        public void sound() {
-            System.out.println("Animal makes a sound");
-        }
-    }
-
-    class Dog extends Animal {
-        public void sound() {
-            System.out.println("Dog barks");
-        }
-    }
-
-    public void main(String[] args){
-        Animal obj=new Dog();
-        obj.sound();
-
-    }
+  public static void main(String[]args){
+     int i=44;
+     double d=i;
+      System.out.println(d);
+  }
 
 }
