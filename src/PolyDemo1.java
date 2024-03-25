@@ -11,7 +11,7 @@ public class PolyDemo1 {
     }
   public static void main(String[]args){
      PolyDemo1 obj=new PolyDemo1();
-     obj.sum(1,2);
+
      obj.sum(1,2,3,4);
      obj.sum(1,2,3);
      obj.sum(1,2,3);
