@@ -14,6 +14,9 @@ public class PolyDemo1 {
      obj.sum(1,2);
      obj.sum(1,2,3,4);
      obj.sum(1,2,3);
+      obj.sum(1,2);
+      obj.sum(1,2,3,4);
+      obj.sum(1,2,3);
   }
 
 }
