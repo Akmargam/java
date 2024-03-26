@@ -1,5 +1,5 @@
 class Parent{
-    void sum(int a, int b){
+    static void sum(int a, int b){
         System.out.println("Sum is:"+(a+b));
     }
     void multi(int a, int b){
@@ -7,7 +7,7 @@ class Parent{
     }
 }
 class Child1 extends Parent{
-    void sum(int a,int b){
+    static void sum(int a,int b){
         System.out.println("Sum plus 1 is :"+(a+b+1));
     }
     void divide(int a, int b){
@@ -20,7 +20,7 @@ public class DynamicPolyMorphism {
        Parent objP=new Child1();
        obj.multi(4,5);
        obj.divide(7,7);
-       objP.sum(4,4);
+       Parent.sum(4,55);
        System.out.println(objP);
    }
 
